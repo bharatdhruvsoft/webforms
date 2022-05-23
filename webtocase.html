@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Web To Case Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <img src="cropped-dhruvsoft-logo-new.png" href="#default" class="logo">
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="webtoleadform.html">Web To Lead</a>
+          <a class="active"href="webtocase.html">Web To Case</a>
+          
+        </div>
+  </div>
+<div class="wrapper">
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D5g00000CPz3i">
+<input type=hidden name="retURL" value="https://bharatdhruvsoft.github.io/webforms/thankyou.html">
+
+    <div class="title">
+     Web To Case Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label for="company">Company</label><input  id="company" maxlength="80" name="company" size="20" type="text" class="input"/><br>
+
+       </div>  
+        <div class="inputfield">
+          <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" class="input"/><br>
+
+       </div>  
+       <div class="inputfield">
+          <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" class="input"/><br>
+
+       </div>  
+      <div class="inputfield">
+          <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" class="input"/><br>
+
+       </div> 
+        <div class="inputfield">
+          <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" class="input"/><br>
+       </div> 
+        <div class="inputfield">
+          <label for="status">Status</label>
+          <div class="custom_select">
+          <select  id="status" name="status"><option value="">--None--</option><option value="New">New</option>
+            <option value="Working">Working</option>
+            <option value="Escalated">Escalated</option>
+            <option value="Closed">Closed</option>
+            </select></div>
+       </div> 
+      <div class="inputfield">
+          <label for="reason">Case Reason</label>
+           <div class="custom_select">
+          <select  id="reason" name="reason"><option value="">--None--</option><option value="Installation">Installation</option>
+              <option value="Equipment Complexity">Equipment Complexity</option>
+              <option value="Performance">Performance</option>
+              <option value="Breakdown">Breakdown</option>
+              <option value="Equipment Design">Equipment Design</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option>
+          </select></div>
+       </div> 
+      <div class="inputfield">
+        <label>Whatsapp Number</label><input  id="00N5g00000SoD8f" name="00N5g00000SoD8f" size="20" type="text" class="input"/><br>
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+       
+<input type="hidden"  id="external" name="external" value="1" /><br>
+      <div class="inputfield">
+        <input type="submit" name="submit"  class="btn">
+      </div>
+    </div>
+</div>  
+  <footer>
+  <p class="footer-text">©2022 Bharat Mohanty, LLC. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
